@@ -1,7 +1,7 @@
 # ued-code-submissions-cake-order-shopping-online
-ued-code-submissions-cake-order-shopping-online created by GitHub Classroom
+## ued-code-submissions-cake-order-shopping-online created by GitHub Classroom
 -------------------------------------------------------
-User Experience Design Report On - "Cake Order Shopping Online"
+# User Experience Design Report On - "Cake Order Shopping Online"
 
 Developed By: -
 Prajapati Yash P. (20162121023)
@@ -27,22 +27,3 @@ Recommended Software Requirements: -
 • Appropriate JAR files
 • Bootstrap 4
 • MD Bootstrap
-
-Database Queries: -
-/*Creating Table Query - User*/
-CREATE TABLE user(userId INT PRIMARY KEY AUTO_INCREAMENT,userName VARCHAR(100),userPhone VARCHAR(100),userAddress VARCHAR(100),userEmail VARCHAR(100),userPassword VARCHAR(100),userPic VARCHAR(100));
-
-/*Creating Table Query - Category*/
-CREATE TABLE category(cId int primary key AUTO_INCREAMENT,cTitle varchar(50) unique key,cDescription varchar(255),cPic varchar(50));
-
-/*Creating Table Query - Product*/
-CREATE TABLE product(pId int primary key AUTO_INCREAMENT,pTitle varchar(50) unique key,pDescription varchar(255),pPic varchar(50),pPrice bigint,pDiscount bigint,pQuantity bigint,cId int, foreign key (cId) references category(cId));
-
-/*Inserting Records Query - User*/
-INSERT INTO `user` (`userName`, `userPhone`, `userAddress`, `userEmail`, `userPassword`) VALUES (?,?,?,?,?);
-
-/*Inserting Records Query - Category*/
-INSERT INTO `category` (`cTitle`, `cDescription`, `cPic`) VALUES (?,?,?);
-
-/*Inserting Records Query - Product*/
-INSERT INTO `myproject`.`product` (`pTitle`, `pDescription`, `pPic`, `pPrice`, `pDiscount`, `pQuantity`, `cId`) VALUES (?,?,?,?,?,?,?);
